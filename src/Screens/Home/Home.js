@@ -29,6 +29,7 @@ const Home = () => {
       <Text>{num}</Text>
 
       <Button title="Increment" onPress={onAdd} />
+      
 
       <Button title="Decrement" />
     </View>
