@@ -12,8 +12,9 @@ export function counterReducer(state = init_State, action) {
       return {...state, num: data + 1};
 
     case types.DECREMENT: {
-      let data = action.payload;
-      return {...state, num: data + 1};
+      let data = action.payLoad;
+      console.log('Decrement Reducer  Called ', data);
+      return {...state, num: data - 1};
     }
     default:
       return {...state};
